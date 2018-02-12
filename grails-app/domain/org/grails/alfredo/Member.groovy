@@ -8,7 +8,7 @@ class Member {
 
     static constraints = {
         email email: true
-        name maxSize: 255
+        name blank: false, nullable: false, maxSize: 255
         birthdate validator: {
             val ->
                 return val.before(new Date())
