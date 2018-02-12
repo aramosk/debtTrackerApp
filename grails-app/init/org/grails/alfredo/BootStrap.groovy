@@ -12,6 +12,11 @@ class BootStrap {
         def alexandra = new Member(name: 'Alexandra', email: 'alexandra@geckotech.nl', birthdate: Date.parse('yyyy-MM-dd','1984-03-14')).save()
         def mike = new Member(name: 'Mike', email: 'mike@geckotech.nl', birthdate: Date.parse('yyyy-MM-dd','1984-03-14')).save()
 
+        def ernstOwesAlfredo = new Beer(giver: ernst, receiver: alfredo, amount: 5).save()
+        def AlfredoOwesErnst = new Beer(giver: alfredo, receiver: ernst, amount: 3).save()
+        def ronaldToKevin = new Beer(giver: ronald, receiver: kevin, amount: 5).save()
+        def kevinOwesRonald = new Beer(giver: kevin, receiver: ronald, amount: 3).save()
+
     }
     def destroy = {
     }
