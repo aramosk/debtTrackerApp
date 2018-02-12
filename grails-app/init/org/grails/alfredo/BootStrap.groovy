@@ -1,8 +1,28 @@
 package org.grails.alfredo
 
+import grails.converters.JSON
+
 class BootStrap {
 
     def init = { servletContext ->
+
+        JSON.registerObjectMarshaller(Member) {
+            def output = [:]
+            output['id'] = it.id
+            output['name'] = it.name
+
+            return output;
+        }
+
+        JSON.registerObjectMarshaller(Beer) {
+            def output = [:]
+            output['id'] = it.id
+            output['giver'] = it.giver
+            output['amount'] = it.amount
+            output['receiver'] = it.receiver
+
+            return output;
+        }
 
         def ernst = new Member(name: 'Ernst', email: 'ernst@geckotech.nl', birthdate: Date.parse('yyyy-MM-dd', '1970-05-12')).save()
         def mathijs = new Member(name: 'Mathijs', email: 'mathijs@geckotech.nl', birthdate: Date.parse('yyyy-MM-dd','1974-04-11')).save()
