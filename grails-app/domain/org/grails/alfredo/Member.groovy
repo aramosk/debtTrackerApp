@@ -14,4 +14,8 @@ class Member {
                 return val.before(new Date())
         }
     }
+
+    String toString() {
+        name
+    }
 }

@@ -8,6 +8,6 @@ class Beer {
     int amount
 
     static constraints = {
-        amount min: 0
+        amount min: 1
     }
 }
