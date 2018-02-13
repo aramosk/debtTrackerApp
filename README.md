@@ -15,4 +15,4 @@ Enter to the root directory 'debtTrackerApp' and execute:
     $ ./grailsw run-app        
 ``` 
 
-
+After running the above command, Grails will launch the application using an embedded Tomcat server, and make it available (by default) at <http://localhost:8080>.

@@ -36,14 +36,14 @@ class BootStrap {
         def alexandra = new Member(name: 'Alexandra', email: 'alexandra@geckotech.nl', birthdate: Date.parse('yyyy-MM-dd','1984-03-14')).save()
         def mike = new Member(name: 'Mike', email: 'mike@geckotech.nl', birthdate: Date.parse('yyyy-MM-dd','1984-03-14')).save()
 
-        def ernstOwesAlfredo = new Beer(giver: ernst, receiver: alfredo, amount: 5).save()
-        def AlfredoOwesErnst = new Beer(giver: alfredo, receiver: ernst, amount: 3).save()
-        def ronaldToKevin = new Beer(giver: ronald, receiver: kevin, amount: 7).save()
-        def kevinOwesRonald = new Beer(giver: kevin, receiver: ronald, amount: 10).save()
-        def alexandraOwesMike = new Beer(giver: alexandra, receiver: mike, amount: 4).save()
-        def mikeOwesAlexandra = new Beer(giver: mike, receiver: alexandra, amount: 8).save()
-        def mathijsOwesRonald = new Beer(giver: mathijs, receiver: ronald, amount: 10).save()
-        def ronaldOwesmathijs = new Beer(giver: ronald, receiver: mathijs, amount: 9).save()
+        def ernstOwesAlfredo = new Beer(giver: ernst, receiver: alfredo, amount: 50).save()
+        def AlfredoOwesErnst = new Beer(giver: alfredo, receiver: ernst, amount: 30).save()
+        def ronaldToKevin = new Beer(giver: ronald, receiver: kevin, amount: 70).save()
+        def kevinOwesRonald = new Beer(giver: kevin, receiver: ronald, amount: 25).save()
+        def alexandraOwesMike = new Beer(giver: alexandra, receiver: mike, amount: 45).save()
+        def mikeOwesAlexandra = new Beer(giver: mike, receiver: alexandra, amount: 80).save()
+        def mathijsOwesRonald = new Beer(giver: mathijs, receiver: ronald, amount: 37).save()
+        def ronaldOwesmathijs = new Beer(giver: ronald, receiver: mathijs, amount: 60).save()
 
     }
     def destroy = {

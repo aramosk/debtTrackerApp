@@ -24,6 +24,9 @@
         <li class="list-group-item">
             <g:link controller="debt" action="retrieveDebts" params="[giver:'1']">REST call to retrieve debts owed by member with id=1 in JSON</g:link>
         </li>
+        <li class="list-group-item">
+            <g:link controller="plot" action="index">Visualise debts in 3D surface plot</g:link>
+        </li>
     </ul>
 
 </div>
